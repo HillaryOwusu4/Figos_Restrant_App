@@ -1,0 +1,11 @@
+.parent{
+    width: 90%;
+    height: 90%;
+   background-image: linear-gradient(320deg,rgb(73, 7, 7) ,rgb(7, 7, 7) 15% 80%,rgb(82, 82, 82) );
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 4px solid rgb(82, 82, 82);
+ }

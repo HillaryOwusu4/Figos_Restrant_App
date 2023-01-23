@@ -1,0 +1,44 @@
+.Dishes{
+    min-width: 24%;
+    height: 100%;
+    background-image: linear-gradient(rgb(63, 63, 63),black);
+    margin-left: 20px;
+   display: flex;
+   justify-content: center;
+ background-color: aqua;
+   border-radius: 30px;
+    /* grid-gap: 20px; */
+
+}
+.styling{
+    max-width: 24%;
+    height: 100%;
+    background-image: linear-gradient(rgb(63, 63, 63),black);
+    margin-left: 20px;
+   display: flex;
+   justify-content: center;
+ background-color: aqua;
+   border-radius: 30px;
+}
+.foodImage{
+    grid-area:1/1/span 3/span 6 ;
+    /* background-color: rgb(71, 107, 107); */
+    z-index: 20;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.fooditem{
+    grid-area:2/ 2/span 5/span 8 ;
+   
+    
+    border-radius: 10px;
+}
+.parent{
+overflow: scroll;
+/* padding-left:310px ; */
+}
+.parent::-webkit-scrollbar {
+    display: none;
+        
+  }

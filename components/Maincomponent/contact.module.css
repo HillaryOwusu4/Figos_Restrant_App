@@ -1,0 +1,35 @@
+.Address {
+    grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: span 10;
+ 
+}
+
+.Form {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: span 8;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns:
+        20% 20% 20% 20% 20%;
+    grid-template-rows:
+        10% 10% 10% 10% 10% 10% 10% 10% 10% 10%  ;
+       
+  
+}
+
+/* buttons:disabled,
+button:disabled:hover,
+button:disabled:active{
+  background: #ccc;
+  color: #292929;
+  border: #ccc;
+  cursor: not-allowed;
+  
+} */

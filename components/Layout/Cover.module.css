@@ -1,0 +1,14 @@
+.detail{
+    width: 100%;
+    height: 100%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+ background-image: linear-gradient(135deg,black 80%,rgb(121, 9, 9));
+
+}
+.parents{
+    width: 100%;
+    height: 80rem;
+    background: #000;
+}
