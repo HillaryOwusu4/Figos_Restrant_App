@@ -33,7 +33,7 @@ const [inputvalue,setinput]=useState('1')
       <div className="w-full flex justify-between items-center h-[15]">
         <p className="font-semibold text-[20px]">Available-item:{6}</p>
       <p className="font-bold text-[20px]">{`${detailspop.Price.toFixed(2)}$`}</p>
-      <input type="number" name="text" id="text" max='6'  min='1' value={inputvalue}
+      <input type="number"  id="text" max='6'  min='1' value={inputvalue}
        onChange={InputHandler} className='bg-zinc-800 p-1 rounded-sm'/>
       </div>
      <div className="w-full flex items-center justify-between mt-4 h-[15%] ">
