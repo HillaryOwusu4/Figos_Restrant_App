@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
 import { cartActions } from "../components/store/CartFeature";
 import Cookies from "js-cookie";
+import Head from "next/head";
 const SignIn = () => {
   
 
@@ -74,7 +75,12 @@ const SignIn = () => {
     setPasswordValue("");
   };
 
-  return (
+  return (<><Head>
+    <title>Figos Resturant</title><meta
+          content="Find the most amazing food in the world, we have all the various variety of foods.
+           We are here to be your friend for life"
+          name="Description"
+        /></Head>
     <div className="w-[90%] h-[70%]  flex justify-center ">
       <div className="w-[40%] h-[70%]  ">
         <div className="w-full h-[20%]  flex flex-col items-center justify-end">
@@ -86,7 +92,7 @@ const SignIn = () => {
         <div className="w-full  h-[80%] ">
           <div className="w-full h-[34%]  text-zinc-500 flex flex-col font-semibold justify-center items-center ">
             <p>Welcome back! Login to access the Sweet Food we have</p>
-            <p>
+            <div>
               Did you{" "}
               <Link
                 href="/forgotPassword"
@@ -94,7 +100,7 @@ const SignIn = () => {
               >
                 forget your password?
               </Link>
-            </p>
+            </div>
           </div>
           <form
             className="w-full flex flex-col items-center  justify-around h-[60%] "
@@ -135,7 +141,7 @@ const SignIn = () => {
           </form>
         </div>
       </div>
-    </div>
+    </div></>
   );
 };
 

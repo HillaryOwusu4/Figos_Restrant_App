@@ -1,7 +1,8 @@
+import Image from "next/image";
 const AboutUs = () => {
     return (<div className="w-full flex items-center justify-center h-[80%]">
         <div className="w-[50%] h-[80%] flex items-center justify-center ">
-           <img src="/images/good-removebg-preview (3).png" alt=""  className="border  bg-white rounded-full
+           <Image src="/images/good-removebg-preview (3).png" alt="" width={1000} height={300}  className="border  bg-white rounded-full
            "/>
         </div>
         <div className="w-[50%] h-[80%] flex items-center justify-center">
@@ -20,9 +21,9 @@ const AboutUs = () => {
                 <div className="w-[40%] flex h-[100%]">
                   <div className="w-[25%] flex text-zinc-400 flex-col justify-around h-[80%]">
        
-                  <img src="/Images/order.png" alt="CHEF" className="w-8 h-8" />
-                  <img src="/Images/customer-service.png" alt="CHEF" className="w-8 h-8" />
-                  <img src="/Images/kitchen.png" alt="CHEF" className="w-8 h-8" />
+                  <Image src="/Images/order.png" alt="CHEF" width={30} height={30} className="w-8 h-8" />
+                  <Image src="/Images/customer-service.png"  width={30} height={30}  alt="CHEF" className="w-8 h-8" />
+                  <Image src="/Images/kitchen.png" alt="CHEF"  width={30} height={30}  className="w-8 h-8" />
                   </div>
                   <div className="w-[75%] h-[80%] ">
                   <ul className="w-full h-full flex text-zinc-400 flex-col justify-around">
@@ -35,9 +36,9 @@ const AboutUs = () => {
                 <div className="w-[40%]  h-[100%] flex">
                 <div className="w-[25%]  flex text-zinc-400 flex-col justify-around  h-[80%]">
                 
-                <img src="/Images/booking.png" alt="CHEF" className="w-8 h-8" />
-                <img src="/Images/planning.png" alt="CHEF" className="w-8 h-8" />
-                <img src="/Images/chef.png" alt="CHEF" className="w-8 h-8" />
+                <Image src="/Images/booking.png" alt="CHEF"  width={30} height={30}  className="w-8 h-8" />
+                <Image src="/Images/planning.png" alt="CHEF"  width={30} height={30}  className="w-8 h-8" />
+                <Image src="/Images/chef.png" alt="CHEF"  width={30} height={30}  className="w-8 h-8" />
                 </div>
                   <div className="w-[75%] h-[80%] ">
                   <ul className="w-full h-full flex text-zinc-400 flex-col justify-around" >

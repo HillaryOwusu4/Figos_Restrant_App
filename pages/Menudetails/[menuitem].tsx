@@ -1,7 +1,15 @@
 import Detailmenu from "../../components/Maincomponent/DetailMenu";
+import Head from "next/head";
 const Menudetail = (props: any) => {
   return (
     <div className="w-[90%] h-full flex justify-center">
+      <Head>
+        <title>Figos Resturant</title><meta
+          content="Find the most amazing food in the world, we have all the various variety of foods.
+           We are here to be your friend for life"
+          name="Description"
+        />
+      </Head>
       <Detailmenu Menudetail={props.Menudetail} />
     </div>
   );

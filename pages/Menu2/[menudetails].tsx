@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../components/store/CartFeature";
 import { useState } from "react";
+import Image from "next/image";
+import Head from "next/head";
 const Details = (props: any) => {
   const dispatch = useDispatch();
   const [inputvalue, setinputvalue] = useState("1");
@@ -11,7 +13,14 @@ const Details = (props: any) => {
   
     setinputvalue(event.target.value);
   };
-  return (
+  return (<>
+  <Head>
+    <title>Figos Resturant</title><meta
+          content="Find the most amazing food in the world, we have all the various variety of foods.
+           We are here to be your friend for life"
+          name="Description"
+        />
+  </Head>
     <div className="w-[90%] h-[80%] grid grid-cols-3 gap-3 grid-rows-3">
       {props.Menuitems.map((item:{
     id: number|number;
@@ -43,7 +52,9 @@ const Details = (props: any) => {
                 className="w-full h-[84%]"
               >
                 <div className="w-[100%]  flex justify-center h-[65%] ">
-                  <img src={item.image} className="w-[45%] h-[100%]" />
+                 <div className="w-[85%]  flex justify-center items-center h-[100%]">
+                 <Image alt='' width={130} height={70} src={item.image}  />
+                 </div>
                   <div className="w-[10%] absolute hover:bg-red-900 flex mt-2 justify-center rounded-full text-sm items-center right-[10px] bg-red-600 h-[10%]">
                     <Link href="/cartitems">
                       {" "}
@@ -81,7 +92,7 @@ const Details = (props: any) => {
           </div>
         );
       })}
-    </div>
+    </div></>
   );
 };
 

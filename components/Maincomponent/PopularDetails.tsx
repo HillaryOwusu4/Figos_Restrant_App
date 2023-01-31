@@ -3,7 +3,7 @@ import Router, { useRouter } from "next/router";
 import Link from "next/link";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-
+import Image from "next/image";
 import { cartActions } from "../store/CartFeature";
 import { useSelector } from "react-redux";
 
@@ -45,7 +45,10 @@ const PopularDetails = (probs: any) => {
                 <i className={probs.cart}></i>
               </Link>
             </div>
-            <img src={probs.image} className="h-[90%] w-[90%]" />
+            <div className="">
+            <Image width={190} height={110} alt="" src={probs.image}  />
+            </div>
+            
           </div>
           <div className="w-full h-[30%] ">
             <div className="w-full h-[30%] flex justify-center items-center font-bold text-zinc-200 text-[20px]">

@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { cartActions } from "../components/store/CartFeature";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Head from "next/head";
 const Signup = () => {
  const router= useRouter()
    const dispatch = useDispatch()
@@ -82,6 +83,14 @@ const Signup = () => {
   };
 
   return (
+    <>
+    <Head>
+      <title>Figos Resturant</title><meta
+          content="Find the most amazing food in the world, we have all the various variety of foods.
+           We are here to be your friend for life"
+          name="Description"
+        />
+    </Head>
     <div className="w-[90%] h-[70%]  flex justify-center ">
       <div className="w-[40%] h-[70%]  ">
         <div className="w-full h-[20%] flex flex-col items-center justify-end">
@@ -139,7 +148,7 @@ const Signup = () => {
           </form>
         </div>
       </div>
-    </div>
+    </div></>
   );
 };
 

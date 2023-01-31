@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 import { cartActions } from '../store/CartFeature'
 import { useDispatch } from 'react-redux'
 import React, { useState } from 'react'
@@ -33,8 +34,7 @@ const [inputvalue,setinput]=useState('1')
         <p className="font-semibold text-[20px]">Available-item:{6}</p>
       <p className="font-bold text-[20px]">{`${detailspop.Price.toFixed(2)}$`}</p>
       <input type="number" name="text" id="text" max='6'  min='1' value={inputvalue}
-       onChange={InputHandler} className='bg-zinc-800 p-1 rounded-sm 
-                        '/>
+       onChange={InputHandler} className='bg-zinc-800 p-1 rounded-sm'/>
       </div>
      <div className="w-full flex items-center justify-between mt-4 h-[15%] ">
    
@@ -45,7 +45,7 @@ const [inputvalue,setinput]=useState('1')
       </div>
     </div>
     <div className="w-[50%] h-full justify-center items-center flex ">
-      <img src={detailspop.image} alt="" />
+      <Image src={detailspop.image} width={640} height={460} alt="" />
     </div>
   </div> );
 }

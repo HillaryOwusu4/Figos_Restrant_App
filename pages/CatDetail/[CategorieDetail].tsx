@@ -2,6 +2,8 @@ import  { useRouter } from "next/router";
 import { useState } from "react";
 import { cartActions } from "../../components/store/CartFeature";
 import { useDispatch } from 'react-redux'
+import Image from "next/image";
+import Head from "next/head";
 const CategorieDetail = (probs:any) => {
     const [inputvalue,setinput]=useState('1')
     const router = useRouter()
@@ -25,7 +27,15 @@ const CategorieDetail = (probs:any) => {
     }
 
     return ( <div className="w-[90%] h-[70%]">
+       
          <div className="w-full text-white h-[60%] flex ">
+         <Head>
+            <title>Figos Returant</title><meta
+          content="Find the most amazing food in the world, we have all the various variety of foods.
+           We are here to be your friend for life"
+          name="Description"
+        />
+         </Head>
     <div className="w-[50%] h-full justify-center items-center flex ">
       <div className="w-[80%] flex flex-col   justify-center  h-[80%]">
        <p className="text-[45px] w-full font-semibold h-[40%]">{probs.CatDetailData.Name}</p>
@@ -42,7 +52,7 @@ const CategorieDetail = (probs:any) => {
       </div>
     </div>
     <div className="w-[50%] h-full justify-center items-center flex ">
-      <img src={probs.CatDetailData.image} alt="" />
+      <Image width={500} height={400} src={probs.CatDetailData.image} alt="" />
     </div>
   </div> 
      

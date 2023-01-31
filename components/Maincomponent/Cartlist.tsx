@@ -61,9 +61,9 @@ const Cartlist = () => {
   return (
     <div className="text-white w-full h-full ">
       <div className={`${classes.parent} w-full h-[75%]`}>
-        {item?.map((item: any) => {
+        {item?.map((item: any, index:number) => {
           return (
-            <div className="w-full cursor-pointer h-[20%]">
+            <div key={index} className="w-full cursor-pointer h-[20%]">
               <div className="w-[100%] border-b-2 border-red-500 flex h-[100%] ">
                 <div className="w-[25%] items-center flex flex-col justify-center h-full ">
                   <div className="w-[80%] h-[36%]  flex items-center font-semibold text-[20px]">

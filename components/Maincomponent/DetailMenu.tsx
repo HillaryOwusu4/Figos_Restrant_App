@@ -1,4 +1,5 @@
 import {useRouter} from "next/router";
+import Image from "next/image";
 import React, { useState } from "react";
 import { cartActions } from "../store/CartFeature";
 import { useDispatch } from 'react-redux'
@@ -45,7 +46,7 @@ const Detailmenu = ({Menudetail}:any) => {
       </div>
     </div>
     <div className="w-[50%] h-full justify-center items-center flex ">
-      <img src={Menudetail.image} alt="" />
+      <Image width={400} height={200} src={Menudetail.image} alt="" />
     </div>
   </div>  );
 }

@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-
+import Image from "next/image";
 import Link from "next/link";
 import classes from "../Layout/Navbar.module.css";
 import { useRouter } from "next/router";
@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <div className="w-[90%] cursor-pointer flex h-[15%] ">
       <div className="w-[15%] h-[100%] flex justify-start items-center">
-        <img src="/images/figos-removebg-preview.png"></img>
+        <Image src="/images/figos-removebg-preview.png"  width={120} height={100}  alt=""></Image>
       </div>
       <div className="w-[65%] text-white h-[100%] flex justify-center items-center ">
         <ul

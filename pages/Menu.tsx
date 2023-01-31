@@ -1,7 +1,16 @@
+import Head from "next/head";
 import Menulist from "../components/Maincomponent/Menulist";
+
 const Menu = (props: any) => {
   return (
     <div className="w-[90%] h-[80%] ">
+      <Head>
+        <title>figos Resturant</title><meta
+          content="Find the most amazing food in the world, we have all the various variety of foods.
+           We are here to be your friend for life"
+          name="Description"
+        />
+      </Head>
       <Menulist Allfetched={props.Allfetched} />
     </div>
   );

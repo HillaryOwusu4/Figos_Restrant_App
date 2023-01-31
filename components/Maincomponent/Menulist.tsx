@@ -5,6 +5,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { cartActions } from '../store/CartFeature';
+import Image from 'next/image';
 const Menulist = (probs:any) => {
 
     const dispatch = useDispatch()
@@ -50,12 +51,12 @@ const Menulist = (probs:any) => {
 
                     return (
    
-                            <div className="w-full  h-[17rem] flex justify-center rounded-md  bg-gradient-to-b from-zinc-800 to-black ">
+                            <div key={index} className="w-full   h-[17rem] flex justify-center rounded-md  bg-gradient-to-b from-zinc-800 to-black ">
                                 
                                 <div className="w-[90%] relative h-[100%] text-white ">
                                 <Link href={`/Menudetails/` + item.id} key={index + 'hey'} >
                                     <div className="w-[100%]  flex justify-center h-[65%] ">
-                                        <img src={item.image} className="w-[55%]  h-[100%]" />
+                                        <Image src={item.image} alt='' width={130} height={100} className="w-[55%]  h-[100%]" />
                                         <div className="w-[10%] hover:bg-red-900 absolute flex mt-2 justify-center rounded-full text-sm items-center right-[10px] bg-red-600 h-[10%]">
                                             <Link href='/cartitems' >   <i className={item.cart}></i></Link>
                                         </div>
