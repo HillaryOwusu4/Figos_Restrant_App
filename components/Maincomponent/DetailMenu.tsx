@@ -30,7 +30,7 @@ const Detailmenu = ({Menudetail}:any) => {
     <div className="w-[50%] h-full justify-center items-center flex ">
       <div className="w-[80%] flex flex-col   justify-center  h-[80%]">
        <p className="text-[48px] w-full font-semibold h-[20%]">{Menudetail.Name}</p>
-       {/* <p className=" w-full text-justify  h-[20%]">{Menudetail.Description}</p> */}
+      
        <div className="w-full h-[10%] flex justify-between ">
        <p className="font-bold text-[25px]">{`${Menudetail.Price.toFixed(2)}$`}</p>
        <input type="number" name="text" id="text" max='6'  min='1' value={inputvalue}
