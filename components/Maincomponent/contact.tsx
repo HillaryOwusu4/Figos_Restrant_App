@@ -36,7 +36,7 @@ const Contact_us = () => {
     } else {
       setFormIsvalid(false);
     }
-  }, []);
+  }, [enteredValue2,enteredValue1,enteredValue]);
 
   const SubmitHandler= (event:React.FormEvent<HTMLFormElement>) =>  {
     event.preventDefault();
