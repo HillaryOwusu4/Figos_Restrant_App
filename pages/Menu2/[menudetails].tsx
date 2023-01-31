@@ -44,7 +44,7 @@ const Details = (props: any) => {
         };
 
         return (
-          <div key={index} className="w-[full] h-[full] shadow-md shadow-gray-600  flex justify-center rounded-lg bg-gradient-to-b from-zinc-800 to-black">
+          <div  className="w-[full] h-[full] shadow-md shadow-gray-600  flex justify-center rounded-lg bg-gradient-to-b from-zinc-800 to-black" key={index + '1'}>
             <div className="w-[90%] relative h-[100%] text-white ">
               <Link
                 href={`/CatDetail/` + item.id}
