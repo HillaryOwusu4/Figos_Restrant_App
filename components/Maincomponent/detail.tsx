@@ -46,9 +46,7 @@ useEffect(()=>{
           <p className=" w-full text-justify  h-[20%]">{dem?.Description}</p>
           <div className="w-full flex justify-between items-center h-[15]">
             <p className="font-semibold text-[20px]">Available-item:{6}</p>
-            <p className="font-bold text-[20px]">{`${dem?.Price.toFixed(
-              2
-            )}$`}</p>
+            <p className="font-bold text-[20px]">{`${dem.Price.toFixed(2)}$`}</p>
             <input
               type="number"
               id="text"
