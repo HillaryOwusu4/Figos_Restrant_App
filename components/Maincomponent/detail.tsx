@@ -12,7 +12,7 @@ const DetailDish = ({
   },
   demo,
 }: any) => {
-  console.log("demo ", demo);
+
   const [dem, setDemo] = useState({ ...demo });
   const dispatch = useDispatch();
   const router = useRouter();
@@ -38,7 +38,7 @@ const DetailDish = ({
 useEffect(()=>{
   setDemo({ ...demo })
 },[])
-console.log(dem?.Price.toFixed(2))
+
   return (
     <div className="w-full  h-[70%] flex ">
       <div className="w-[50%] h-full  justify-center items-center flex ">
@@ -47,7 +47,7 @@ console.log(dem?.Price.toFixed(2))
           <p className=" w-full text-justify  h-[20%]">{dem?.Description}</p>
           <div className="w-full flex justify-between items-center h-[15]">
             <p className="font-semibold text-[20px]">Available-item:{6}</p>
-            <p className="font-bold text-[20px]">{`${dem.Price.toFixed(2)}$`}</p>
+            <p className="font-bold text-[20px]">{`${dem.Price}$`}</p>
             <input
               type="number"
               id="text"
