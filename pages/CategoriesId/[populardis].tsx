@@ -33,8 +33,16 @@ interface respond {
 export  async function getStaticPaths():Promise<respond> {
     const res =  await fetch('https://resturant-app-f0a60-default-rtdb.firebaseio.com/populardish.json')
     const data = await res.json()
-    
-    let loadedData=[];
+    interface fetchedData{
+      Name:string
+      Description:string,
+      Price:number,
+      cart:string,
+      Add:string,
+      image:string,
+      id:number,
+    }
+    let loadedData:fetchedData[]=[];
     for( const key in data){
       loadedData.push({
         Name:data[key].name,

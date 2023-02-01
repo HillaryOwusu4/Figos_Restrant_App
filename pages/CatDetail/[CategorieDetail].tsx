@@ -4,7 +4,7 @@ import { cartActions } from "../../components/store/CartFeature";
 import { useDispatch } from 'react-redux'
 import Image from "next/image";
 import Head from "next/head";
-const CategorieDetail = (probs:any) => {
+const CategorieDetail = (props:any) => {
     const [inputvalue,setinput]=useState('1')
     const router = useRouter()
     const dispatch = useDispatch()
@@ -19,9 +19,9 @@ const CategorieDetail = (probs:any) => {
 
         event.preventDefault()
         dispatch(cartActions.Additems({
-            id: probs.CatDetailData.id,
-            Name:probs. CatDetailData.Name,
-            Price:probs. CatDetailData.Price,
+            id: props.CatDetailData.id,
+            Name:props. CatDetailData.Name,
+            Price:props. CatDetailData.Price,
             Value: Number(inputvalue)
         }))
     }
@@ -38,9 +38,9 @@ const CategorieDetail = (probs:any) => {
          </Head>
     <div className="w-[50%] h-full justify-center items-center flex ">
       <div className="w-[80%] flex flex-col   justify-center  h-[80%]">
-       <p className="text-[45px] w-full font-semibold h-[40%]">{probs.CatDetailData.Name}</p>
+       <p className="text-[45px] w-full font-semibold h-[40%]">{props.CatDetailData.Name}</p>
        <div className="w-full h-[10%] flex justify-between ">
-       <p className="font-bold text-[25px]">{`${probs.CatDetailData.Price.toFixed(2)}$`}</p>
+       <p className="font-bold text-[25px]">{`${props.CatDetailData.Price.toFixed(2)}$`}</p>
        <input type="number" name="text" id="text" max='6'  min='1' value={inputvalue}
        onChange={InputHandler} className='bg-zinc-800 p-1 rounded-sm'/>
        </div>
@@ -52,7 +52,7 @@ const CategorieDetail = (probs:any) => {
       </div>
     </div>
     <div className="w-[50%] h-full justify-center items-center flex ">
-      <Image width={500} height={400} src={probs.CatDetailData.image} alt="" />
+      <Image width={500} height={400} src={props.CatDetailData.image} alt="" />
     </div>
   </div> 
      

@@ -25,6 +25,7 @@ const [inputvalue,setinput]=useState('1')
           Value: Number(inputvalue)
       }))
   }
+  console.log('detailspop.Name',detailspop.Name)
     return ( <div className="w-full  h-[70%] flex ">
     <div className="w-[50%] h-full  justify-center items-center flex ">
       <div className="w-[80%] flex flex-col justify-center  h-[70%]">
