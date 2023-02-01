@@ -38,6 +38,7 @@ const DetailDish = ({
 useEffect(()=>{
   setDemo({ ...demo })
 },[])
+console.log(dem?.Price.toFixed(2))
   return (
     <div className="w-full  h-[70%] flex ">
       <div className="w-[50%] h-full  justify-center items-center flex ">
