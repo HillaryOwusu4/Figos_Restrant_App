@@ -9,9 +9,8 @@ const Mainpage = (probs:any) => {
     return ( 
 <Cover>
 <Head>
-            <script src="https://kit.fontawesome.com/e1926457f9.js" crossOrigin="anonymous" async/>
-            
-            
+    
+<script src="https://kit.fontawesome.com/6565e8edc1.js" ></script>
             </Head>
        
             <main className={classes.parent}>
