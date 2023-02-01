@@ -1,6 +1,5 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import { FadeLoader } from "react-spinners";
-import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../components/store/CartFeature";
 import { useRouter } from "next/router";

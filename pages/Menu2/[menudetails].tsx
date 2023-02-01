@@ -63,7 +63,7 @@ const Details = (props: any) => {
                   </div>
                 </div>
                 <div className="w-full h-[19%] flex items-center  justify-center font-semibold ">
-                  {item.Name}
+                 {item.Name}
                 </div>
               </Link>
               <div className="w-full flex justify-between h-[12%] ">

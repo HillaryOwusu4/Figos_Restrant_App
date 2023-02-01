@@ -38,7 +38,8 @@ const CategorieDetail = (props:any) => {
          </Head>
     <div className="w-[50%] h-full justify-center items-center flex ">
       <div className="w-[80%] flex flex-col   justify-center  h-[80%]">
-       <p className="text-[45px] w-full font-semibold h-[40%]">{props.CatDetailData.Name}</p>
+       <p className="text-[45px] w-full font-semibold h-[40%]">{
+       props.CatDetailData.Name}</p>
        <div className="w-full h-[10%] flex justify-between ">
        <p className="font-bold text-[25px]">{`${props.CatDetailData.Price.toFixed(2)}$`}</p>
        <input type="number" name="text" id="text" max='6'  min='1' value={inputvalue}

@@ -93,10 +93,10 @@ const Navbar = () => {
             href="/SignIn"
             className={router.pathname === "/SignIn" ? classes.style : "hover:border-b-2 hover:border-b-red-600"}
           >
-            <button>Sign In</button>
+           <div className=""><button>Sign In</button></div> 
           </Link>
         )}
-        {isloggedin && <button onClick={onlogouthandler} className={classes.Login}>Logout</button>}
+        {isloggedin && <div><button onClick={onlogouthandler} className={classes.Login}>Logout</button></div>}
       </div>
     </div>
   );

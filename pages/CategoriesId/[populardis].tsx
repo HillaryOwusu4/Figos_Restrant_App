@@ -1,17 +1,19 @@
-import DetailDish from "../../components/Maincomponent/detail";
+// import DetailDish from "../../components/Maincomponent/Detail";
 import Head from "next/head";
-const Populardish = (props:any) => {
-
+import DetailDish from "../../components/Maincomponent/detail";
+const Populardish = ({detailspop={}}:any) => {
+   
+  console.log('detail quava',detailspop)
 
     return ( <div className="text-white w-[90%] h-full ">
-      <Head>
+      {/* <Head>
             <title>Figos Returant</title><meta
           content="Find the most amazing food in the world, we have all the various variety of foods.
            We are here to be your friend for life"
           name="Description"
         />
-         </Head>
-       <DetailDish detailspop={props.detailspop} />
+         </Head> */}
+       <DetailDish demo = {detailspop}/>
     </div> );
 }
  
