@@ -10,7 +10,10 @@ const Mainpage = (probs:any) => {
 <Cover>
 <Head>
     
-<script src="https://kit.fontawesome.com/6565e8edc1.js" ></script>
+<script src="https://kit.fontawesome.com/6565e8edc1.js" crossOrigin="anonymous" async></script>
+
+            
+            
             </Head>
        
             <main className={classes.parent}>
