@@ -5,9 +5,11 @@ import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
 import { cartActions } from "../components/store/CartFeature";
 import Cookies from "js-cookie";
+
 import Head from "next/head";
 const SignIn = () => {
   
+const [url,seturl]=useState()
 
   const [isLoading, setisLoading] = useState(true);
   const [EmailValue, setEmailValue] = useState("");
@@ -61,9 +63,9 @@ const SignIn = () => {
       })
       .then((data) => {
         dispatch(cartActions.loginhandler(data.idToken));
-        let url = window.location.pathname === '/SignIn' ? '/' : window.location.pathname
+        // let url = window.location.pathname === '/SignIn' ? '/' : window.location.pathname
         console.log('url',url)
-        router.push(url);
+        router.push(window.location.pathname );
         setisLoading(true);
        
       })
