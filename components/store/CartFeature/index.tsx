@@ -81,7 +81,7 @@ const CartSlice = createSlice({
             state.Totalamount = state.Totalamount - action.payload.price
             const existingitemindex = state.items.findIndex((item) => item.id === action.payload.id)
           
-            const existingitem = state.items[existingitemindex]
+            const existingitem = state?.items[existingitemindex]
             if (existingitem.Value === 1) {
                 state.items = state.items.filter((item) => item.id !== action.payload.id)
             }

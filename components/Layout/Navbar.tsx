@@ -88,15 +88,15 @@ const Navbar = () => {
             </div>
           </i>
         </div>
-        {!isloggedin && (
+        {/* {!isloggedin && (
           <Link
             href="/SignIn"
             className={router.pathname === "/SignIn" ? classes.style : "hover:border-b-2 hover:border-b-red-600"}
           >
            <div className=""><button>Sign In</button></div> 
           </Link>
-        )}
-        {isloggedin && <div><button onClick={onlogouthandler} className={classes.Login}>Logout</button></div>}
+        )} */}
+        {/* {isloggedin && <div><button onClick={onlogouthandler} className={classes.Login}>Logout</button></div>} */}
       </div>
     </div>
   );
